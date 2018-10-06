@@ -1,0 +1,33 @@
+{
+  "name": "{{{project.name}}}",
+  "version": "{{{project.version}}}",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init": "kexpress-cli init",
+    "start": "pm2 start {{{project.name}}}.pm2.json",
+    "dev": "cross-env KEXPRESS_ENV=dev node loader.js",
+    "test": "cross-env KEXPRESS_ENV=test jest --coverage apps",
+    "deploy": "cross-env KEXPRESS_ENV=prod.single KEXPRESS_COMMAND=deploy node loader.js",
+    "doc": "cross-env KEXPRESS_ENV=dev KEXPRESS_COMMAND=doc kexpress-cli doc rest",
+    "tools": "cross-env KEXPRESS_ENV=dev node tools/index"
+  },
+  "keywords": [
+  ],
+  "author": "{{{project.author}}}",
+  "license": "{{{project.license}}}",
+  "devDependencies": {
+    "cross-env": "^5.1.4",
+    "eslint": "^4.19.1"
+  },
+  "dependencies": {
+    "connect-mongo": "^2.0.1",
+    "inquirer": "^6.2.0",
+    "kexpress": "^1.0.0-beta.14",
+    "kexpress-http": "^1.0.6",
+    "kexpress-store": "^1.0.5",
+    "mysql2": "^1.6.1",
+    "sequelize": "^4.39.0",
+    "uuid": "^3.3.2"
+  }
+}

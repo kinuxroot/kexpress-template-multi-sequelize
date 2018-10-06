@@ -1,0 +1,15 @@
+{
+  "name": "kexpress-template-multi-sequelize",
+  "version": "1.0.0",
+  "description": "kexpress project template for multi-app project using sequelize",
+  "keywords": [
+    "kexpress",
+    "template",
+    "sequelize"
+  ],
+  "author": "kinuxroot",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "eslint": "^4.19.1"
+  }
+}
