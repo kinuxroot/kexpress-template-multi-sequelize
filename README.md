@@ -1,7 +1,6 @@
 # KExpress Standard Template
 
-This template is created for kexpress v1.0.x.
-This template use sequelize as the ORM library.
+This template is created for kexpress v1.0.x using sequelize as the ORM library.
 If you want to create a new project from this template, please execute following command:
 
     kexpress-cli create kinuxroot/kexpress-template-multi-sequelize <projectName>
